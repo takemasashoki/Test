@@ -16,7 +16,7 @@ public class Question4 extends HttpServlet {
         
         String name = request.getParameter("name");
         
-        System.out.println("お名前：" + name);
+        System.out.println("名前：" + name);
                 request.setAttribute("name", name);
         RequestDispatcher dispatcher = request.getRequestDispatcher("Question4output.jsp");
         dispatcher.forward(request, response);
